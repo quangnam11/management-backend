@@ -8,9 +8,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/students")
-@CrossOrigin(origins = "*") // Quan trọng để Next.js không bị lỗi CORS
+ // Quan trọng để Next.js không bị lỗi CORS
 public class StudentController {
 
     @Autowired
